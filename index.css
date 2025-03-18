@@ -30,10 +30,15 @@
     transition: 0.5s;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
 /* .banner{
     height: 100vh;
     } */
+
+  
 
 .banner h1 {
     font-size: 200px;
@@ -417,6 +422,12 @@ input[type="number"]::-webkit-outer-spin-button {
     .latest-blog .card a{
         font-size: 14px;
     }
+
+    .main-footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: black;
+    }
 }
 
 
@@ -574,6 +585,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .latest-blog .card a{
         font-size: 14px;
+    }
+
+    .main-footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: black;
     }
 
 }
@@ -738,6 +755,11 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .latest-blog .card a{
         font-size: 14px;
+    }
+    .main-footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: black;
     }
 }
 
