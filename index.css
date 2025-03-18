@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
@@ -9,23 +9,23 @@
     /* overflow: hidden !important; */
 }
 
-.header .navbar-cart{
+.header .navbar-cart {
     cursor: pointer;
 }
 
-.header .navbar-button:hover{
-    background-color: green !important; 
+.header .navbar-button:hover {
+    background-color: green !important;
     cursor: pointer;
     transition: all 0.5s;
 }
 
 
-.header .offcanvas .offcanvas-body ul li a:hover{
+.header .offcanvas .offcanvas-body ul li a:hover {
     color: red !important;
     transition: all 0.7s;
 }
 
-.header .offcanvas .offcanvas-body ul li button:hover{
+.header .offcanvas .offcanvas-body ul li button:hover {
     color: red !important;
     transition: 0.5s;
 }
@@ -33,576 +33,831 @@
 
 /* .banner{
     height: 100vh;
-} */
+    } */
 
-.banner h1{
+.banner h1 {
     font-size: 200px;
     letter-spacing: 5px;
     
 }
 
-.banner .first-image img{
+.banner .first-image img {
     left: 100px !important;
     opacity: .5;
 }
 
-.banner .second-image img{
+.banner .second-image img {
     right: 150px !important;
     opacity: .8;
 }
 
-.banner  .first-image-banner{
+.banner .first-image-banner {
     margin-left: 160px !important;
     /* max-width: 60% !important; */
 }
 
-.kebab-corner h1{
+.kebab-corner h1 {
     font-size: 40px;
 }
 
-.kebab-corner .item-card p{
-margin-left: 30px;
-margin-bottom: 60px;
-font-size: 25px;
+.kebab-corner .item-card p {
+    margin-left: 30px;
+    margin-bottom: 60px;
+    font-size: 25px;
 }
-.kebab-corner .item-card b{
+
+.kebab-corner .item-card b {
     margin-left: 30px;
     margin-bottom: 30px;
     font-size: 20px;
-    }
+}
 
-   .kebab-corner .shopping-cart{
+.kebab-corner .shopping-cart {
     margin-right: 40px;
     margin-bottom: 50px;
     cursor: pointer;
-   }
+}
 
-   .kebab-corner .item-card img{
+.kebab-corner .item-card img {
     width: 100% !important;
 }
 
-.choose-us{
+.choose-us {
     margin-top: 150px;
 }
-.choose-us .transparent-text{
+
+.choose-us .transparent-text {
     font-size: 70px;
     font-weight: bolder;
-    color: transparent;     /* Andar se transparent */
-        -webkit-text-stroke: 0.5px orange;
+    color: transparent;
+    /* Andar se transparent */
+    -webkit-text-stroke: 0.5px orange;
 }
 
 
-.biryani-menu{
+.biryani-menu {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #f7f1e1;
 }
 
 
-.chefs .overlay{
+.chefs .overlay {
     width: 100%;
     height: 100%;
     background-color: #58595B;
     opacity: 0;
 }
 
-.chefs .overlay:hover{
+.chefs .overlay:hover {
     opacity: .5;
 }
 
-.chefs .overlay:hover ul li{
+.chefs .overlay:hover ul li {
     margin-right: 20px;
     transition: 1s;
 }
 
-.chefs ul li{
+.chefs ul li {
     width: 40px;
     height: 40px;
     margin-top: 10px;
     cursor: pointer;
 }
 
-.chefs ul li:hover{
+.chefs ul li:hover {
     background-color: red !important;
-
+    
 }
 
-.chefs ul li:hover i{
+.chefs ul li:hover i {
     color: white;
-
+    
 }
 
-.steak-house{
+.steak-house {
     padding: 50px 0px;
 }
 
-.steak-house .shopping-bucket{
+.steak-house .shopping-bucket {
     margin: 15px 20px 0px 0px;
     border-end-start-radius: 50% !important;
     padding: 10px !important;
 }
 
-.steak-house h3{
+.steak-house h3 {
     font-size: 22px;
-} 
+}
 
-.steak-house b{
+.steak-house b {
     font-size: 25px;
-} 
+}
+
+
+.reservation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+.reservation h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.reservation .input-group input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.reservation form input::placeholder{
+    color: white;
+}
+
+.testimonial{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.latest-blog{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.latest-blog .card:hover{
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.latest-blog .card .card-tittle ul li{
+    font-size: 15px;
+}
+
+
+.latest-blog .card .card-tittle ul li{
+    font-size: 14px;
+}
+
+.latest-blog .card .card-para{
+    font-size: 14px;
+}
+
+.latest-blog .card a{
+    font-size: 16px;
+}
+
+.footer-header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f7f1e1;
+}
+
+.footer-header .payment-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.main-footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+.main-footer .main-footer-social-icons ul li:hover{
+    background-color: red;
+    transition: 0.5s;
+    border: none !important;
+}
+
+.main-footer .main-footer-social-icons ul li:hover i{
+    color: white !important;
+}
+
+.main-footer .contact-list ul li{
+    cursor: pointer;
+}
+
+.main-footer .contact-list ul li:hover{
+    color: red !important;
+
+}
+
+.main-footer .navigation-list ul li{
+    cursor: pointer;
+}
+
+.main-footer .navigation-list ul li:hover{
+    color: red !important;
+
+}
+
+.main-footer .timming-list ul li{
+    cursor: pointer;
+}
+
+.main-footer .timming-list ul li:hover{
+    color: red !important;
+
+}
 
 
 
-@media screen and  (min-width: 320px) and (max-width: 374px) {
-    .banner h1{
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .banner h1 {
         font-size: 60px;
         letter-spacing: 2px;
-        
+
     }
-    
-    .banner .first-image img{
+
+    .banner .first-image img {
         left: 100px !important;
         opacity: .5;
         width: 50px !important;
         height: 50px !important;
     }
-    
-    .banner .second-image img{
+
+    .banner .second-image img {
         right: 100px !important;
         opacity: .8;
         width: 30px !important;
         height: 30px !important;
     }
-    .banner .third-image img{
+
+    .banner .third-image img {
         right: 100px !important;
         opacity: .8;
         width: 50px !important;
         height: 50px !important;
     }
 
-    .banner .first-image-banner{
+    .banner .first-image-banner {
         margin-left: 60px !important;
         max-width: 40% !important;
     }
 
-    .kebab-corner h1{
+    .kebab-corner h1 {
         font-size: 25px;
     }
 
-    .kebab-corner .item-card p{
+    .kebab-corner .item-card p {
         margin-left: 10px;
         margin-bottom: 60px;
         font-size: 25px;
-        }
-        .kebab-corner .item-card b{
-            margin-left: 50px;
-            margin-bottom: 30px;
-            font-size: 20px;
-            }
-        
-           .kebab-corner .shopping-cart{
-            margin-right: 30px;
-            margin-bottom: 50px;
-            cursor: pointer;
-           }
+    }
 
-    .kebab-corner .item-card{
+    .kebab-corner .item-card b {
+        margin-left: 50px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .kebab-corner .shopping-cart {
+        margin-right: 30px;
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    .kebab-corner .item-card {
         margin-top: 20px;
     }
 
 
-    .choose-us{
+    .choose-us {
         margin-top: 100px;
     }
-    .choose-us .transparent-text{
+
+    .choose-us .transparent-text {
         font-size: 35px;
         font-weight: bolder;
-        color: transparent;     /* Andar se transparent */
-            -webkit-text-stroke: 0.5px orange;
+        color: transparent;
+        /* Andar se transparent */
+        -webkit-text-stroke: 0.5px orange;
     }
 
-    .choose-us-card-section h2{
+    .choose-us-card-section h2 {
         font-size: 17px;
     }
 
-    .choose-us-card-section p{
+    .choose-us-card-section p {
         font-size: 12px;
     }
-     
-    .choose-us-card-section button{
+
+    .choose-us-card-section button {
         font-size: 15px;
         width: 100px !important;
         margin-top: 10px;
     }
 
-    .biryani-menu{
+    .biryani-menu {
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: #f7f1e1;
     }
 
-    .biryani-menu ul li b{
+    .biryani-menu ul li b {
         font-size: 12px;
     }
-    .biryani-menu ul li P{
+
+    .biryani-menu ul li P {
         font-size: 10PX;
     }
 
-    .biryani-menu ul li h3{
+    .biryani-menu ul li h3 {
         font-size: 15px;
     }
 
-    .steak-house h1{
+    .steak-house h1 {
         font-size: 25px;
         margin-top: 20px;
     }
 
-    .steak-house .shopping-bucket{
+    .steak-house .shopping-bucket {
         margin: 15px 20px 0px 0px;
         padding: 10px !important;
         border-end-start-radius: 50% !important;
     }
-    
-    .steak-house h3{
+
+    .steak-house h3 {
         font-size: 20px;
-    } 
-    
-    .steak-house b{
+    }
+
+    .steak-house b {
         font-size: 25px;
-    } 
-    
-    
+    }
+
+    .reservation {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: black;
+    }
+
+    .reservation h1 {
+        font-size: 23px;
+        font-weight: 800;
+    }
+
+    .reservation h3{
+        font-size: 20px;
+    }
+
+    .testimonial{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .latest-blog .card .card-tittle ul li{
+        font-size: 12px;
+    }
+
+    .latest-blog .card .card-para{
+        font-size: 12px;
+    }
+
+    .latest-blog .card a{
+        font-size: 14px;
+    }
 }
 
-@media screen and ( min-width: 375px) and ( max-width: 576px ) {
-    .banner h1{
+
+
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+    .banner h1 {
         font-size: 80px;
         letter-spacing: 2px;
-        
+
     }
-    
-    .banner .first-image img{
+
+    .banner .first-image img {
         left: 100px !important;
         opacity: .5;
         width: 50px !important;
         height: 50px !important;
     }
-    
-    .banner .second-image img{
+
+    .banner .second-image img {
         right: 100px !important;
         opacity: .8;
         width: 30px !important;
         height: 30px !important;
     }
-    .banner .third-image img{
+
+    .banner .third-image img {
         right: 100px !important;
         opacity: .8;
         width: 50px !important;
         height: 50px !important;
     }
 
-    .banner .first-image-banner{
+    .banner .first-image-banner {
         margin-left: 60px !important;
         max-width: 40% !important;
     }
 
-    .kebab-corner h1{
+    .kebab-corner h1 {
         font-size: 30px;
     }
 
-    .kebab-corner .item-card p{
+    .kebab-corner .item-card p {
         margin-left: 10px;
         margin-bottom: 60px;
         font-size: 25px;
-        }
-        .kebab-corner .item-card b{
-            margin-left: 50px;
-            margin-bottom: 30px;
-            font-size: 20px;
-            }
-        
-           .kebab-corner .shopping-cart{
-            margin-right: 30px;
-            margin-bottom: 50px;
-            cursor: pointer;
-           }
+    }
 
-    .kebab-corner .item-card{
+    .kebab-corner .item-card b {
+        margin-left: 50px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .kebab-corner .shopping-cart {
+        margin-right: 30px;
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    .kebab-corner .item-card {
         margin-top: 20px;
     }
 
-    .kebab-corner .item-card img{
+    .kebab-corner .item-card img {
         width: 100% !important;
     }
 
-    .choose-us{
+    .choose-us {
         margin-top: 100px;
     }
-    .choose-us .transparent-text{
+
+    .choose-us .transparent-text {
         font-size: 35px;
         font-weight: bolder;
-        color: transparent;     /* Andar se transparent */
-            -webkit-text-stroke: 0.5px orange;
+        color: transparent;
+        /* Andar se transparent */
+        -webkit-text-stroke: 0.5px orange;
     }
-    .choose-us-card-section h2{
+
+    .choose-us-card-section h2 {
         font-size: 17px;
     }
 
-    .choose-us-card-section p{
+    .choose-us-card-section p {
         font-size: 12px;
     }
-     
-    .choose-us-card-section button{
+
+    .choose-us-card-section button {
         font-size: 15px;
         width: 100px !important;
         margin-top: 10px;
     }
 
-    
-    .biryani-menu{
+
+    .biryani-menu {
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: #f7f1e1;
     }
 
-    .biryani-menu ul li b{
+    .biryani-menu ul li b {
         font-size: 12px;
     }
-    .biryani-menu ul li P{
+
+    .biryani-menu ul li P {
         font-size: 10PX;
     }
 
-    .biryani-menu ul li h3{
+    .biryani-menu ul li h3 {
         font-size: 15px;
     }
-    .steak-house .shopping-bucket{
+
+    .steak-house .shopping-bucket {
         margin: 15px 20px 0px 0px;
         padding: 10px !important;
         border-end-start-radius: 50% !important;
     }
-    
-    .steak-house h3{
+
+    .steak-house h3 {
         font-size: 20px;
-    } 
-    
-    .steak-house b{
+    }
+
+    .steak-house b {
         font-size: 25px;
     }
-}
 
-@media screen and ( min-width: 577px) and ( max-width: 768px ){
-    .banner h1{
-        font-size: 80px;
-        letter-spacing: 2px;
-        
+    .reservation {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: black;
     }
     
-    .banner .first-image img{
+    .reservation h1 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .reservation h3{
+        font-size: 20px;
+    }
+    
+    .testimonial{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .latest-blog .card .card-tittle ul li{
+        font-size: 12px;
+    }
+
+    .latest-blog .card .card-para{
+        font-size: 12px;
+    }
+
+    .latest-blog .card a{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .banner h1 {
+        font-size: 80px;
+        letter-spacing: 2px;
+
+    }
+
+    .banner .first-image img {
         left: 100px !important;
         opacity: .5;
         width: 50px !important;
         height: 50px !important;
     }
-    
-    .banner .second-image img{
+
+    .banner .second-image img {
         right: 100px !important;
         opacity: .8;
         width: 30px !important;
         height: 30px !important;
     }
-    .banner .third-image img{
+
+    .banner .third-image img {
         right: 100px !important;
         opacity: .8;
         width: 50px !important;
         height: 50px !important;
     }
 
-    .banner .first-image-banner{
+    .banner .first-image-banner {
         margin-left: 60px !important;
         max-width: 40% !important;
     }
-    .kebab-corner h1{
+
+    .kebab-corner h1 {
         font-size: 30px;
     }
 
-    .kebab-corner .item-card p{
+    .kebab-corner .item-card p {
         margin-left: 10px;
         margin-bottom: 60px;
         font-size: 25px;
-        }
-        .kebab-corner .item-card b{
-            margin-left: 40px;
-            margin-bottom: 30px;
-            font-size: 20px;
-            }
-        
-           .kebab-corner .shopping-cart{
-            margin-right: 20px;
-            margin-bottom: 50px;
-            cursor: pointer;
-           }
+    }
 
-    .kebab-corner .item-card{
+    .kebab-corner .item-card b {
+        margin-left: 40px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .kebab-corner .shopping-cart {
+        margin-right: 20px;
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    .kebab-corner .item-card {
         margin-top: 20px;
     }
 
-    .kebab-corner .item-card img{
+    .kebab-corner .item-card img {
         width: 100% !important;
     }
 
-    .choose-us{
+    .choose-us {
         margin-top: 100px;
     }
-    .choose-us .transparent-text{
+
+    .choose-us .transparent-text {
         font-size: 40px;
         font-weight: bolder;
-        color: transparent;     /* Andar se transparent */
-            -webkit-text-stroke: 0.5px orange;
+        color: transparent;
+        /* Andar se transparent */
+        -webkit-text-stroke: 0.5px orange;
     }
 
-    .choose-us-card-section h2{
+    .choose-us-card-section h2 {
         font-size: 17px;
     }
 
-    .choose-us-card-section p{
+    .choose-us-card-section p {
         font-size: 12px;
     }
-     
-    .choose-us-card-section button{
+
+    .choose-us-card-section button {
         width: 100px !important;
     }
 
-    .choose-us-card-section h2{
+    .choose-us-card-section h2 {
         font-size: 17px;
     }
 
-    .choose-us-card-section p{
+    .choose-us-card-section p {
         font-size: 12px;
     }
-     
-    .choose-us-card-section button{
+
+    .choose-us-card-section button {
         font-size: 15px;
         width: 100px !important;
         margin-top: 10px;
     }
 
-    .biryani-menu{
+    .biryani-menu {
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: #f7f1e1;
     }
 
-    .biryani-menu ul li b{
+    .biryani-menu ul li b {
         font-size: 12px;
     }
-    .biryani-menu ul li P{
+
+    .biryani-menu ul li P {
         font-size: 10PX;
     }
 
-    .biryani-menu ul li h3{
+    .biryani-menu ul li h3 {
         font-size: 15px;
     }
-    .steak-house .shopping-bucket{
+
+    .steak-house .shopping-bucket {
         margin: 15px 20px 0px 0px;
         padding: 10px !important;
         border-end-start-radius: 50% !important;
     }
-    
-    .steak-house h3{
+
+    .steak-house h3 {
         font-size: 20px;
-    } 
-    
-    .steak-house b{
+    }
+
+    .steak-house b {
         font-size: 25px;
+    }
+    .reservation {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: black;
+    }
+    
+    .reservation h1 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .reservation h3{
+        font-size: 22px;
+    }
+    .testimonial{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .latest-blog .card .card-tittle ul li{
+        font-size: 12px;
+    }
+
+    .latest-blog .card .card-para{
+        font-size: 12px;
+    }
+
+    .latest-blog .card a{
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
-    .kebab-corner .item-card p{
+    .kebab-corner .item-card p {
         margin-left: 10px;
         margin-bottom: 60px;
         font-size: 22px;
-        }
-        .kebab-corner .item-card b{
-            margin-left: 40px;
-            margin-bottom: 30px;
-            font-size: 20px;
-            }
-        
-           .kebab-corner .shopping-cart{
-            margin-right: 20px;
-            margin-bottom: 50px;
-            cursor: pointer;
-           }
+    }
 
-    .kebab-corner .item-card{
+    .kebab-corner .item-card b {
+        margin-left: 40px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .kebab-corner .shopping-cart {
+        margin-right: 20px;
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    .kebab-corner .item-card {
         margin-top: 20px;
     }
 
-    .kebab-corner .item-card img{
+    .kebab-corner .item-card img {
         width: 100% !important;
     }
 
-    .choose-us{
+    .choose-us {
         margin-top: 100px;
     }
-    .choose-us .transparent-text{
+
+    .choose-us .transparent-text {
         font-size: 45px;
         font-weight: bolder;
-        color: transparent;     /* Andar se transparent */
-            -webkit-text-stroke: 0.5px orange;
+        color: transparent;
+        /* Andar se transparent */
+        -webkit-text-stroke: 0.5px orange;
     }
 
-    .choose-us-card-section h2{
+    .choose-us-card-section h2 {
         font-size: 17px;
     }
 
-    .choose-us-card-section p{
+    .choose-us-card-section p {
         font-size: 12px;
     }
-     
-    .choose-us-card-section button{
+
+    .choose-us-card-section button {
         font-size: 15px;
         width: 100px !important;
         margin-top: 10px;
     }
-    .biryani-menu{
+
+    .biryani-menu {
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: #f7f1e1;
     }
 
-    .biryani-menu ul li b{
+    .biryani-menu ul li b {
         font-size: 12px;
     }
-    .biryani-menu ul li P{
+
+    .biryani-menu ul li P {
         font-size: 12PX;
     }
 
-    .biryani-menu ul li h3{
+    .biryani-menu ul li h3 {
         font-size: 15px;
     }
 
-    .chefs ul li{
+    .chefs ul li {
         width: 25px;
         height: 25px;
         margin-top: 10px;
         cursor: pointer;
     }
 
-    .steak-house .shopping-bucket{
+    .steak-house .shopping-bucket {
         margin: 10px 15px 0px 0px;
         padding: 5px !important;
         border-end-start-radius: 50% !important;
     }
-    
-    .steak-house h3{
+
+    .steak-house h3 {
         font-size: 15px;
-    } 
-    
-    .steak-house b{
+    }
+
+    .steak-house b {
         font-size: 20px;
     }
+
+    .reservation {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: black;
+    }
     
+    .reservation h1 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .testimonial{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .latest-blog .card .card-tittle ul li{
+        font-size: 12px;
+    }
+
+    .latest-blog .card .card-para{
+        font-size: 12px;
+    }
+
+    .latest-blog .card a{
+        font-size: 14px;
+    }
 }
 
 /* @media screen and ( min-width: 425px) and ( max-width: 576px ) {
@@ -661,7 +916,7 @@ font-size: 25px;
 } */
 
 
- /* @media screen and (min-width: 577px) and ( max-width: 768px ) {
+/* @media screen and (min-width: 577px) and ( max-width: 768px ) {
     .banner h1{
         font-size: 150px;
         letter-spacing: 2px;
