@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="menu-list-two.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+     <!-- Offcanvas cart Content starts -->
+     <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="offcanvas offcanvas-end" id="myOffcanvas" tabindex="-1">
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title fw-bold">My cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column align-items-center">
+                        <div class="offcanvas-cart-content">
+                            <ul class="list-unstyled">
+                                <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+                                    <div class="offcanvas-cart-img">
+                                        <img src="./../cart-1 (1).jpg" alt="" class="rounded">
+                                    </div>
+                                    <div class="offcanvas-cart-img-content">
+                                        <b>urban bourban bliss ribeye</b>
+                                        <p><span>1</span> X <span>$500.00</span> </p>
+                                    </div>
+                                    <div class="cart-item-delete">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+                                    <div class="offcanvas-cart-img">
+                                        <img src="./../cart-2 (1).jpg" alt="" class="rounded">
+                                    </div>
+                                    <div class="offcanvas-cart-img-content">
+                                        <b>urban bourban bliss ribeye</b>
+                                        <p><span>1</span> X <span>$500.00</span> </p>
+                                    </div>
+                                    <div class="cart-item-delete">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+                                    <div class="offcanvas-cart-img">
+                                        <img src="./../cart-3 (1).jpg" alt="" class="rounded">
+                                    </div>
+                                    <div class="offcanvas-cart-img-content">
+                                        <b>urban bourban bliss ribeye</b>
+                                        <p><span>1</span> X <span>$500.00</span> </p>
+                                    </div>
+                                    <div class="cart-item-delete">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+                                    <div class="offcanvas-cart-img">
+                                        <img src="./../cart-4 (1).jpg" alt="" class="rounded">
+                                    </div>
+                                    <div class="offcanvas-cart-img-content">
+                                        <b>urban bourban bliss ribeye</b>
+                                        <p><span>1</span> X <span>$500.00</span> </p>
+                                    </div>
+                                    <div class="cart-item-delete">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="total-cart-content-price mt-3">
+                            <div class="total-price d-flex align-items-center p-2 rounded border border-secondary">
+                                <b>subtotal : <span class="fw-light">1 X $455.00</span> </b>
+                            </div>
+                        </div>
+                        <div class="order-proceed">
+                            <button class="bg-danger text-white fw-bold border-0 mt-3 p-2 rounded">proceed to
+                                order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offcanvas cart Content ends -->
+
+
+
+    <!-- header section starts  -->
+    <section class="header" style="background-color: white;">
+        <!-- header top section starts  -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg  d-flex justify-content-evenly">
+                        <a href="" class="navbar-brand">
+                            <img src="./../logo-main.png" alt="">
+                        </a>
+                        <div class="navbar-cart order-2 py-2 px-3 mx-sm-1 mx-md-1 mx-lg-3   bg-success rounded">
+                            <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#myOffcanvas"><i
+                                    class="fa-solid fa-cart-shopping text-white "></i></button>
+                        </div>
+                        <div
+                            class="navbar-button order-1 d-none d-sm-block bg-danger text-white fw-bold py-2 px-4 rounded-3">
+                            book a table
+                        </div>
+                        <button class="btn navbar-toggler order-3" data-bs-target="#offcanvas"
+                            data-bs-toggle="offcanvas">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-start" id="offcanvas">
+                            <div class="offcanvas-header">
+                                <img src="logo-main.png" alt="" class="align-self-center">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-link"><a href=""
+                                            class="nav-item text-black fw-bold text-decoration-none">home</a></li>
+                                    <li class="nav-link">
+                                        <div class=" dropdown">
+                                            <button
+                                                class="dropdown-toggle bg-transparent border-0 text-black fw-bold text-decoration-none"
+                                                data-bs-toggle="dropdown" type="button" id="dropdownMenuButton1"
+                                                aria-expanded="false">menu</button>
+                                            <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButton1">
+                                                <li><a href="" class="dropdown-item  border-bottom">menu list one</a>
+                                                </li>
+                                                <li><a href="" class="dropdown-item  border-bottom">menu list two</a>
+                                                </li>
+                                                <li><a href="" class="dropdown-item  border-bottom">menu list three</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-link">
+                                        <div class="dropdown">
+                                            <button
+                                                class="dropdown-toggle bg-transparent border-0 text-black fw-bold text-decoration-none"
+                                                data-bs-toggle="dropdown" aria-expanded="false" type="button"
+                                                id="dropdownMenuButton1">
+                                                pages
+                                            </button>
+                                            <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButton1">
+                                                <li><a href="" class="dropdown-item border-bottom">menu page one</a>
+                                                </li>
+                                                <li><a href="" class="dropdown-item border-bottom">menu page two</a>
+                                                </li>
+                                                <li><a href="" class="dropdown-item border-bottom">menu page three</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-link">
+                                        <div class="dropdown">
+                                            <button
+                                                class="dropdown-toggle bg-transparent border-0 text-black fw-bold text-decoration-none"
+                                                data-bs-toggle="dropdown" aria-expanded="false" type="button"
+                                                id="dropdownMenuButton1">
+                                                shop
+                                            </button>
+                                            <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButton1">
+                                                <li><a href="" class="dropdown-item border-bottom">our shop</a></li>
+                                                <li><a href="" class="dropdown-item border-bottom">peoduct drtails</a>
+                                                </li>
+                                                <li><a href="" class="dropdown-item border-bottom">cart</a></li>
+                                                <li><a href="" class="dropdown-item border-bottom">check out</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-link">
+                                        <div class="dropdown">
+                                            <button
+                                                class="dropdown-toggle bg-transparent border-0 text-black fw-bold text-decoration-none"
+                                                data-bs-toggle="dropdown" aria-expanded="false" type="button"
+                                                id="dropdownMenuButton1">
+                                                blogs
+                                            </button>
+                                            <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButton1">
+                                                <li><a href="" class="dropdown-item border-bottom">blog grid</a></li>
+                                                <li><a href="" class="dropdown-item border-bottom">blog standard</a>
+                                                </li>
+                                                <li><a href="" class="dropdown-item border-bottom">blog details</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-link"><a href=""
+                                            class="nav-item text-black fw-bold text-decoration-none">contact</a></li>
+                                </ul>
+                                <div
+                                    class="navbar-button order-1 d-block d-md-none bg-danger text-white fw-bold py-2 px-4 rounded-3 text-center">
+                                    book a table
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- header top section ends -->
+
+        <!-- header banner section starts  -->
+        <section class="banner bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center mt-5 position-relative">
+                        <h1 class="text-white fw-bolder">menu restaurent</h1>
+                    </div>
+                </div>
+        </section>
+        <!-- header banner section ends -->
+        </div>
+    </section>
+    <!-- header section ends  -->
+
+
+
+
+    <!-- choose menu section starts  -->
+    <section class="choose-menu" style="">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-column align-items-center">
+                    <h2 class="fw-bold">CHOOSE MENU</h2>
+                    <p class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                        recusandae repellat doloremque iusto!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-tabs border-0 w-100 d-flex justify-content-center gap-2" id="myTab"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-black bg-danger fw-bold text-capitalize" id="tab1-tab"
+                                data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">beef</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-black fw-bold text-capitalize" id="tab2-tab"
+                                data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"
+                                style="background-color: #f8e7e6;">grilled</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-black fw-bold text-capitalize" id="tab3-tab"
+                                data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab"
+                                style="background-color: #f8e7e6;">sizzling</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-black fw-bold text-capitalize" id="tab3-tab"
+                                data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab"
+                                style="background-color: #f8e7e6;">steak</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content mt-3" id="myTabContent">
+                    <div class="row  d-flex tab-pane fade show active mb-0 mt-0" id="tab1">
+                        <div class="col-sm-12 col-md-6 mt-3">
+                            <div class="choose-menu-item-list">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex border border-muted mt-3">
+                                        <img src="menu-6 (3).jpg" alt="">
+                                        <div class="menu-item-content p-2 d-flex flex-column justify-content-around">
+                                            <h2 class="fw-bold">Beefy Bourbon Bliss</h2>
+                                            <p>Bourbon-infused beefy bliss savory, smoky, sublime perfection.</p>
+                                            <b class="text-danger">$69.88</b>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex border border-muted mt-3">
+                                        <img src="menu-7 (3).jpg" alt="">
+                                        <div class="menu-item-content p-2 d-flex flex-column justify-content-around">
+                                            <h2 class="fw-bold">Beefy Bourbon Bliss</h2>
+                                            <p>Bourbon-infused beefy bliss savory, smoky, sublime perfection.</p>
+                                            <b class="text-danger">$69.88</b>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex border border-muted mt-3">
+                                        <img src="menu-8 (2).jpg" alt="">
+                                        <div class="menu-item-content p-2 d-flex flex-column justify-content-around">
+                                            <h2 class="fw-bold">Beefy Bourbon Bliss</h2>
+                                            <p>Bourbon-infused beefy bliss savory, smoky, sublime perfection.</p>
+                                            <b class="text-danger">$69.88</b>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mt-3">
+                            <div class="choose-menu-item-list">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex border border-muted mt-3">
+                                        <img src="menu-9.jpg" alt="">
+                                        <div class="menu-item-content p-2 d-flex flex-column justify-content-around">
+                                            <h2 class="fw-bold">Beefy Bourbon Bliss</h2>
+                                            <p>Bourbon-infused beefy bliss savory, smoky, sublime perfection.</p>
+                                            <b class="text-danger">$69.88</b>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex border border-muted mt-3">
+                                        <img src="menu-6 (3).jpg" alt="">
+                                        <div class="menu-item-content p-2 d-flex flex-column justify-content-around">
+                                            <h2 class="fw-bold">Beefy Bourbon Bliss</h2>
+                                            <p>Bourbon-infused beefy bliss savory, smoky, sublime perfection.</p>
+                                            <b class="text-danger">$69.88</b>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex border border-muted mt-3">
+                                        <img src="menu-6 (3).jpg" alt="">
+                                        <div class="menu-item-content p-2 d-flex flex-column justify-content-around">
+                                            <h2 class="fw-bold">Beefy Bourbon Bliss</h2>
+                                            <p>Bourbon-infused beefy bliss savory, smoky, sublime perfection.</p>
+                                            <b class="text-danger">$69.88</b>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+    </section>
+    <!-- choose section ends -->
+
+
+
+    
+    <!-- main footer section starts  -->
+    <section class="main-footer">
+        <div class="container">
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-sm-12 col-md-3">
+                    <img src="logo-white.png" alt="" class="w-100">
+                    <p class="text-secondary">Discover culinary delights recipes and inspiration in our delightful food
+                        haven..</p>
+                    <div class="main-footer-social-icons">
+                        <ul class="d-flex list-unstyled">
+                            <li class="p-2 border border-secondary rounded-circle d-flex align-items-center justify-content-center m-2"
+                                style="width: 35px; height: 35px;"><a href=""><i
+                                        class="fa-brands fa-facebook text-secondary"></i></a></i></li>
+                            <li class="p-2 border border-secondary rounded-circle d-flex align-items-center justify-content-center m-2"
+                                style="width: 35px; height: 35px;"><a href=""><i
+                                        class="fa-brands fa-twitter text-secondary"></i></a></i></li>
+                            <li class="p-2 border border-secondary rounded-circle d-flex align-items-center justify-content-center m-2"
+                                style="width: 35px; height: 35px;"><a href=""><i
+                                        class="fa-brands fa-instagram text-secondary"></i></a></i></li>
+                            <li class="p-2 border border-secondary rounded-circle d-flex align-items-center justify-content-center m-2"
+                                style="width: 35px; height: 35px;"><a href=""><i
+                                        class="fa-brands fa-linkedin text-secondary"></i></a></i></li>
+                            <li class="p-2 border border-secondary rounded-circle d-flex align-items-center justify-content-center m-2"
+                                style="width: 35px; height: 35px;"><a href=""><i
+                                        class="fa-brands fa-youtube text-secondary"></i></a></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="contact-list">
+                        <ul class="list-unstyled">
+                            <li class="mt-3"><b class="text-white fw-bolder">Contact Us</b></li>
+                            <li class="text-secondary mt-3">1901 Thornridge Cir. Shiloh, Hawaii 81063</li>
+                            <li class="text-secondary mt-3">+88-344-667-999</li>
+                            <li class="text-secondary mt-3">order@foodix.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="navigation-list">
+                        <ul class="list-unstyled">
+                            <li class="mt-3"><b class="text-white fw-bolder">quick links</b></li>
+                            <li class="text-secondary mt-3 cursor-pointer">home</li>
+                            <li class="text-secondary mt-3">about us</li>
+                            <li class="text-secondary mt-3">services</li>
+                            <li class="text-secondary mt-3">our menu</li>
+                            <li class="text-secondary mt-3">gallery</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="timming-list">
+                        <ul class="list-unstyled">
+                            <li class="mt-3"><b class="text-white fw-bolder">opening time</b></li>
+                            <li class="text-secondary mt-3">Monday: 10.00am - 05.00pm</li>
+                            <li class="text-secondary mt-3">Tuesday: 10.20am - 05.30pm</li>
+                            <li class="text-secondary mt-3">Wednesday: 10.30am - 05.50pm</li>
+                            <li class="text-secondary mt-3">Thursday: 11.00am - 07.10pm</li>
+                            <li class="text-secondary mt-3">Friday : Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main footer section ends -->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
