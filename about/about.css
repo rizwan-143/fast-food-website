@@ -1,0 +1,156 @@
+
+
+
+.banner h1{
+    font-size: 40px;
+}
+
+
+.about-us{
+    padding: 50px 0px;
+}
+
+.special-chefs{
+    margin-bottom: 50px;
+}
+
+.special-chefs .card-footer .about-us-team-social-links li{
+    width: 35px;
+    height: 35px;
+}
+
+.special-chefs .card-footer .about-us-team-social-links li:hover{
+    background-color: white !important;
+    transition: 0.5s;
+}
+
+.special-chefs .card-footer .about-us-team-social-links li:hover i{
+    color: red !important;
+    transition: 0.5s;
+
+}
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .banner h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+ 
+   .about-us h2{
+    font-size: 17px;
+   }
+    
+   .about-us p{
+    font-size: 12px;
+   }
+   
+    
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+
+    .banner h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .banner h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+ 
+    .choose-menu{
+        padding: 50px 0px;
+    }
+    
+    .choose-menu .choose-menu-item-list img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    
+    .choose-menu .menu-item-content h2{
+        font-size: 16px;
+    }
+    
+    .choose-menu .menu-item-content p{
+        font-size: 10px;
+    }
+ 
+    
+    
+}
+
+
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+
+    
+    .banner h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+ 
+    .banner h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+ 
+    .choose-menu{
+        padding: 50px 0px;
+    }
+    
+    .choose-menu .choose-menu-item-list img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    
+    .choose-menu .menu-item-content h2{
+        font-size: 16px;
+    }
+    
+    .choose-menu .menu-item-content p{
+        font-size: 10px;
+    }
+   
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1025px){
+    
+    .banner h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .banner h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+ 
+    .choose-menu{
+        padding: 50px 0px;
+    }
+    
+    .choose-menu .choose-menu-item-list img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    
+    .choose-menu .menu-item-content h2{
+        font-size: 16px;
+    }
+    
+    .choose-menu .menu-item-content p{
+        font-size: 10px;
+    }
+ 
+   
+}
