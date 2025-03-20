@@ -1,0 +1,71 @@
+
+.banner h1{
+    font-size: 35px;
+}
+
+.product-details{
+    padding: 100px 0px;
+
+}
+
+
+.product-details h3{
+    font-size: 25px;
+}
+
+.product-details p{
+    font-size: 20px;
+}
+
+
+.product-details b{
+    font-size: 30px;
+}
+
+
+.product-details select{
+    padding: 10px 20px;
+}
+
+.product-details del{
+    font-size: 20px;
+}
+
+.product-details .product-details-add-to-cart-button button:hover{
+    background-color: green !important;
+    transition: 1s;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .product-details{
+        padding: 50px 0px;
+    
+    }
+    
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+
+    .product-details{
+        padding: 50px 0px;
+    
+    }
+ 
+    
+    
+}
+
+
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+
+    .product-details{
+        padding: 50px 0px;
+    
+    }
+   
+}

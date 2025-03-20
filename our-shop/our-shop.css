@@ -1,0 +1,85 @@
+
+
+.banner h1{
+    font-size: 40px;
+}
+
+
+.our-shop{
+    padding: 100px 0px;
+    background-color: #f7f1e1;
+}
+
+
+.our-shop .card .heart-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+
+.our-shop .card .card-header .heart-icon:hover{
+    background-color: red !important;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.our-shop .card .card-body h3{
+    font-size: 22px;
+}
+
+.our-shop .card .card-body h3:hover{
+    color: red;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.our-shop .card .card-body button:hover{
+    background-color: green !important;
+    transition: 2s;
+    color: white;
+}
+
+.our-shop .card .card-body button:hover i{
+    color: white;
+}
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .our-shop{
+        padding: 50px 0px;
+        background-color: #f7f1e1;
+    }
+    
+    
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+
+    .our-shop{
+        padding: 50px 0px;
+        background-color: #f7f1e1;
+    }
+    
+ 
+    
+    
+}
+
+
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+
+    
+    .our-shop{
+        padding: 50px 0px;
+        background-color: #f7f1e1;
+    }
+    
+   
+}

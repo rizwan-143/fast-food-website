@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../index.css">
-    <link rel="stylesheet" href="page-not-found.css">
+    <link rel="stylesheet" href="our-shop.css">
     <title>Document</title>
 </head>
+
 <body>
-    
 
-
-
-     <!-- Offcanvas cart Content starts -->
-     <div class="container">
+    <!-- Offcanvas cart Content starts -->
+    <div class="container">
         <div class="row">
             <div class="col">
                 <div class="offcanvas offcanvas-end" id="myOffcanvas" tabindex="-1">
@@ -136,7 +135,7 @@
                                                 <li><a href="./../menu-lise-one/menu-list-one.html"
                                                         class="dropdown-item  border-bottom">menu list one</a>
                                                 </li>
-                                                <li><a href="./../menu-list-two/menu-list-two.html"
+                                                <li><a href="menu-list-two.html"
                                                         class="dropdown-item  border-bottom">menu list two</a>
                                                 </li>
                                     </li>
@@ -156,7 +155,8 @@
                                         </li>
                                         <li><a href="./../FAQ/faq.html" class="dropdown-item border-bottom">faqs</a>
                                         </li>
-                                        <li><a href="page-not-found.html" class="dropdown-item border-bottom">page error</a>
+                                        <li><a href="./../pageNotFound/page-not-found.html"
+                                                class="dropdown-item border-bottom">menu page three</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -170,7 +170,7 @@
                                         shop
                                     </button>
                                     <ul class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButton1">
-                                        <li><a href="./../our-shop/our-shop.html" class="dropdown-item border-bottom">our shop</a></li>
+                                        <li><a href="our-shop.html" class="dropdown-item border-bottom">our shop</a></li>
                                         <li><a href="./../product-details/product-details.html" class="dropdown-item border-bottom">peoduct drtails</a>
                                         </li>
                                         <li><a href="" class="dropdown-item border-bottom">cart</a></li>
@@ -215,7 +215,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center mt-5 position-relative">
-                        <h1 class="text-white fw-bolder">404</h1>
+                        <h1 class="text-white fw-bolder">our products</h1>
                     </div>
                 </div>
         </section>
@@ -225,27 +225,211 @@
     <!-- header section ends  -->
 
 
-    <!-- page not found section starts   -->
-     <section class="page-not-found">
+    <!-- our shop section starts  -->
+    <section class="our-shop">
         <div class="container">
             <div class="row">
-                <div class="col position-relative w-100 d-flex flex-column align-items-center justify-content-center" style="height: 100vh;" >
-                    <img src="error-bg.jpg" alt="" class=" position-absolute z-n1" style="max-width: 100%;">
-                    <div class="overlay position-absolute z-1"></div>
-                    <b class="fw-bold z-2">404</b>
-                    <h4 class="fw-bolder text-white z-2">Oops! Page Not Found</h4>
-                    <p class="text-center w-75 text-white z-2">It looks like you've encountered a "Page Not Found" error, also known as a 404 error.
-                        This typically happens when the web server cannot locate</p>
+                <div class="col d-flex justify-content-between">
+                    <div class="products-result">
+                        <span>Showing 1 - 12 of 30 Results</span>
+                    </div>
+                    <div class="filter-prosucts">
+                        <select class=" p-2 bg-transparent">
+                            <option value=""><b>sorted by newness</b></option>
+                            <option value="">price high to low</option>
+                            <option value="">price low to high</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-                        <button class="border-0 p-3 text-white z-2 rounded-3 "><a href="./../index.html" class="text-decoration-none text-white fw-bold"> go to home</a></button>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative rounded-3 ">
+                            <div class="heart-icon position-absolute p-2 border-muted end-0 rounded-circle d-flex align-items-center justify-content-center "
+                                style="background-color: #83776f;"><i class="fa-regular fa-heart text-white"></i></div>
+                            <img src="product-1.jpg" alt="" class="w-100 rounded-top-3">
+                        </div>
+                        <div class="card-title d-flex justify-content-between p-2 border-bottom">
+                            <b class="text-danger">$18.00</b>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                4.7 <span>(375)</span>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Beefy Bourbon Bliss</h3>
+                            <ul>
+                                <li>4 Piece Chicken</li>
+                                <li>spicy souce</li>
+                            </ul>
+                            <button class="border-0 py-2 rounded border border-secondary w-100">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                add to cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative rounded-3">
+                            <div class="heart-icon position-absolute p-2 border-muted end-0 rounded-circle d-flex align-items-center justify-content-center "
+                                style="background-color: #83776f;"><i class="fa-regular fa-heart text-white"></i></div>
+                            <img src="product-2.jpg" alt="" class="w-100 rounded-top-3">
+                        </div>
+                        <div class="card-title d-flex justify-content-between p-2 border-bottom">
+                            <b class="text-danger">$18.00</b>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                4.7 <span>(375)</span>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Beefy Bourbon Bliss</h3>
+                            <ul>
+                                <li>4 Piece Chicken</li>
+                                <li>spicy souce</li>
+                            </ul>
+                            <button class="border-0 py-2 rounded border border-secondary w-100">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                add to cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative rounded-3">
+                            <div class="heart-icon position-absolute p-2 border-muted end-0 rounded-circle d-flex align-items-center justify-content-center "
+                                style="background-color: #83776f;"><i class="fa-regular fa-heart text-white"></i></div>
+                            <img src="product-3.jpg" alt="" class="w-100 rounded-top-3">
+                        </div>
+                        <div class="card-title d-flex justify-content-between p-2 border-bottom">
+                            <b class="text-danger">$18.00</b>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                4.7 <span>(375)</span>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Beefy Bourbon Bliss</h3>
+                            <ul>
+                                <li>4 Piece Chicken</li>
+                                <li>spicy souce</li>
+                            </ul>
+                            <button class="border-0 py-2 rounded border border-secondary w-100">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                add to cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative rounded-3">
+                            <div class="heart-icon position-absolute p-2 border-muted end-0 rounded-circle d-flex align-items-center justify-content-center "
+                                style="background-color: #83776f;"><i class="fa-regular fa-heart text-white"></i></div>
+                            <img src="product-4.jpg" alt="" class="w-100 rounded-top-3">
+                        </div>
+                        <div class="card-title d-flex justify-content-between p-2 border-bottom">
+                            <b class="text-danger">$18.00</b>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                4.7 <span>(375)</span>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Beefy Bourbon Bliss</h3>
+                            <ul>
+                                <li>4 Piece Chicken</li>
+                                <li>spicy souce</li>
+                            </ul>
+                            <button class="border-0 py-2 rounded border border-secondary w-100">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                add to cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative rounded-3">
+                            <div class="heart-icon position-absolute p-2 border-muted end-0 rounded-circle d-flex align-items-center justify-content-center "
+                                style="background-color: #83776f;"><i class="fa-regular fa-heart text-white"></i></div>
+                            <img src="product-5.jpg" alt="" class="w-100 rounded-top-3">
+                        </div>
+                        <div class="card-title d-flex justify-content-between p-2 border-bottom">
+                            <b class="text-danger">$18.00</b>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                4.7 <span>(375)</span>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Beefy Bourbon Bliss</h3>
+                            <ul>
+                                <li>4 Piece Chicken</li>
+                                <li>spicy souce</li>
+                            </ul>
+                            <button class="border-0 py-2 rounded border border-secondary w-100">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                add to cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative rounded-3">
+                            <div class="heart-icon position-absolute p-2 border-muted end-0 rounded-circle d-flex align-items-center justify-content-center "
+                                style="background-color: #83776f;"><i class="fa-regular fa-heart text-white"></i></div>
+                            <img src="product-6.jpg" alt="" class="w-100 rounded-top-3">
+                        </div>
+                        <div class="card-title d-flex justify-content-between p-2 border-bottom">
+                            <b class="text-danger">$18.00</b>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                4.7 <span>(375)</span>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Beefy Bourbon Bliss</h3>
+                            <ul>
+                                <li>4 Piece Chicken</li>
+                                <li>spicy souce</li>
+                            </ul>
+                            <button class="border-0 py-2 rounded border border-secondary w-100">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                add to cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item m-2"><a href="" class="page-link text-black  bg-transparent disabled">previous</a></li>
+                        <li class="page-item m-2"><a href="" class="page-link text-black  bg-transparent active">1</a></li>
+                        <li class="page-item m-2"><a href="" class="page-link text-black  bg-transparent">2</a></li>
+                        <li class="page-item m-2"><a href="" class="page-link text-black  bg-transparent">3</a></li>
+                        <li class="page-item m-2"><a href="" class="page-link text-black  bg-transparent">next</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-     </section>
-    <!-- page not found section ends -->
+    </section>
+    <!-- our shop section ends -->
 
 
-       
+    
  <!-- main footer section starts  -->
  <section class="main-footer">
     <div class="container">
@@ -314,7 +498,11 @@
 <!-- main footer section ends -->
 
 
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
