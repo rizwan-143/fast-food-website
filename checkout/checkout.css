@@ -11,6 +11,22 @@
     font-size: 20px;
 }
 
+.check-out .login-button button:hover{
+    background-color: green !important;
+    transition: 1s;
+}
+
 .checkOut-form{
     padding: 50px 0px;
+}
+
+
+.checkOut-form .cart-proceed-button button:hover{
+    background-color: green !important;
+    transition: 1s;
+}
+
+.checkOut-form .order-place-button button:hover{
+    background-color:  green !important;
+    transition: 1s;
 }
