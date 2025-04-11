@@ -96,10 +96,10 @@
 
     <section class="header" style="background-color: #ffb200;">
         <!-- header top section starts  -->
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <nav class="navbar navbar-expand-lg  d-flex justify-content-evenly">
+                    <nav class="navbar navbar-expand-lg  d-flex justify-content-center w-100 p-2 " id="navbar">
                         <a href="" class="navbar-brand">
                             <img src="logo-main.png" alt="">
                         </a>
@@ -112,7 +112,7 @@
                             class="navbar-button order-1 d-none d-sm-block bg-danger text-white fw-bold py-2 px-4 rounded-3">
                             book a table
                         </div>
-                        <button class="btn navbar-toggler order-3" data-bs-target="#offcanvas"
+                        <button class="btn navbar-toggler order-3 ms-3" data-bs-target="#offcanvas"
                             data-bs-toggle="offcanvas">
                             <i class="fa-solid fa-bars"></i>
                         </button>
@@ -1147,92 +1147,15 @@
     </script>
 
     <script>
-        // let ul = document.getElementById("cartList");
-        // let li = document.createElement("li");
-        // let itemName = document.getElementById("itemName").textContent;
-        // let itemPRice = document.getElementById("itemPRice").textContent;
-        // let itemImg = document.getElementById("itemImg").src;   
-        // let delbtn = document.createElement("button");
-        // delbtn.innerText = "delete";     
-        // li.innerHTML = `
-        // <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
-        //                             <div class="offcanvas-cart-img w-25">
-        //                                 <img src="${itemImg}" alt="" class="rounded w-100">
-        //                             </div>
-        //                             <div class="offcanvas-cart-img-content">
-        //                                 <b>${itemName}</b>
-        //                                 <p>${itemPRice} </p>
-        //                             </div>
-        //                             <div class="cart-item-delete">
-        //                                 ${delbtn}
-        //                             </div>
-        //                         </li>
-        //                         `
-                               
-        //                         li.appendChild(delbtn);
-        //                         delbtn.addEventListener(`click` , function (){
-        //                             li.remove();
-        //                         })
+ window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
 
-
-        
-
-        // function addToCart(){
-        //     ul.appendChild(li);
-        // }
-
-
-//         function addToCart(itemCard){
-//             const itemCard = cartIcon.closest('.item-card');
-//             let itemName = itemCard.querySelector("p").textContent;
-// let itemPRice = itemCard.querySelector("b").textContent;
-// let itemImg = itemCard.querySelector("img").getAttribute("src"); 
-//           let ul = document.getElementById("cartList");
-//         let li = document.createElement("li");
-
-//          li.innerHTML = `
-//         <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
-//                                     <div class="offcanvas-cart-img w-25">
-//                                         <img src="${itemImg}" alt="" class="rounded w-100">
-//                                     </div>
-//                                     <div class="offcanvas-cart-img-content">
-//                                         <b>${itemName}</b>
-//                                         <p>${itemPRice} </p>
-//                                     </div>
-                                   
-//                                 </li>
-//                                 `
-//                                 ul.appendChild(li);
-//         }
-
-
-// function addToCart(cartIcon) {
-//     // Find the parent .item-card of the clicked icon
-//     const itemCard = cartIcon.closest('.item-card');
-
-//     // Extract data from this item only
-//     const itemName = itemCard.querySelector("p").textContent;
-//     const itemPRice = itemCard.querySelector("b").textContent;
-//     const itemImg = itemCard.querySelector("img").getAttribute("src");
-
-//     // Create cart item
-//     const ul = document.getElementById("cartList");
-//     const li = document.createElement("li");
-
-//     li.innerHTML = `
-//         <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
-//             <div class="offcanvas-cart-img w-25">
-//                 <img src="${itemImg}" alt="" class="rounded w-100">
-//             </div>
-//             <div class="offcanvas-cart-img-content">
-//                 <b>${itemName}</b>
-//                 <p>${itemPRice}</p>
-//             </div>
-//         </li>
-//     `;
-
-//     ul.appendChild(li);
-// }
+  if (window.scrollY > 50) {
+    navbar.classList.add("fixed-navbar");
+  } else {
+    navbar.classList.remove("fixed-navbar");
+  }
+});
 
 
 function addToCart(cartIcon) {
@@ -1265,6 +1188,9 @@ document.querySelectorAll('.shopping-cart').forEach(cartIcon => {
         addToCart(cartIcon);
     });
 });
+
+
+
 
 
 
