@@ -24,8 +24,8 @@
                     </div>
                     <div class="offcanvas-body d-flex flex-column align-items-center">
                         <div class="offcanvas-cart-content">
-                            <ul class="list-unstyled">
-                                <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+                            <ul class="list-unstyled" id="cartList">
+                                 <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
                                     <div class="offcanvas-cart-img">
                                         <img src="cart-1 (1).jpg" alt="" class="rounded">
                                     </div>
@@ -49,7 +49,7 @@
                                         <i class="fa-solid fa-trash-can"></i>
                                     </div>
                                 </li>
-                                <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+                                <!-- <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
                                     <div class="offcanvas-cart-img">
                                         <img src="cart-3 (1).jpg" alt="" class="rounded">
                                     </div>
@@ -72,7 +72,7 @@
                                     <div class="cart-item-delete">
                                         <i class="fa-solid fa-trash-can"></i>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         <div class="total-cart-content-price mt-3">
@@ -298,19 +298,19 @@
             </div>
             <div class="row d-flex justify-content-around">
                 <div class="col col-sm-12 col-md-4  position-relative"  data-aos="zoom-in">
-                    <div class="item-card">
-                        <p class="text-black fw-bold position-absolute bottom-0 text-white">shish kebab</p>
-                        <b class="text-warning fw-bold position-absolute bottom-0" >40$</b>
-                        <div class="shopping-cart position-absolute bottom-0 end-0 p-2 bg-success rounded"><i
+                    <div class="item-card" id="itemCard">
+                        <p class="text-black fw-bold position-absolute bottom-0 text-white" id="itemName">shish kebab</p>
+                        <b class="text-warning fw-bold position-absolute bottom-0" id="itemPRice">40$</b>
+                        <div class="shopping-cart position-absolute bottom-0 end-0 p-2 bg-success rounded" onclick="addToCart()" ><i
                                 class="fa-solid fa-cart-plus text-white"></i></div>
-                        <img src="kb_1.jpg" alt="" style=" max-width: 100%;" class="rounded-4">
+                        <img src="kb_1.jpg" alt="" style=" max-width: 100%;" class="rounded-4" id="itemImg">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 position-relative"  data-aos="zoom-in">
                     <div class="item-card">
                         <p class="text-black fw-bold position-absolute bottom-0 text-white">doner kebab</p>
                         <b class="text-warning fw-bold position-absolute bottom-0">40$</b>
-                        <div class="shopping-cart position-absolute bottom-0 end-0 p-2 bg-success rounded"><i
+                        <div class="shopping-cart position-absolute bottom-0 end-0 p-2 bg-success rounded" onclick="addToCart()"><i
                                 class="fa-solid fa-cart-plus text-white"></i></div>
                         <img src="kb_2.jpg" alt="" style=" max-width: 100%;" class="rounded-4">
                     </div>
@@ -1144,6 +1144,131 @@
             duration:1000,
             delay:400
         })
+    </script>
+
+    <script>
+        // let ul = document.getElementById("cartList");
+        // let li = document.createElement("li");
+        // let itemName = document.getElementById("itemName").textContent;
+        // let itemPRice = document.getElementById("itemPRice").textContent;
+        // let itemImg = document.getElementById("itemImg").src;   
+        // let delbtn = document.createElement("button");
+        // delbtn.innerText = "delete";     
+        // li.innerHTML = `
+        // <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+        //                             <div class="offcanvas-cart-img w-25">
+        //                                 <img src="${itemImg}" alt="" class="rounded w-100">
+        //                             </div>
+        //                             <div class="offcanvas-cart-img-content">
+        //                                 <b>${itemName}</b>
+        //                                 <p>${itemPRice} </p>
+        //                             </div>
+        //                             <div class="cart-item-delete">
+        //                                 ${delbtn}
+        //                             </div>
+        //                         </li>
+        //                         `
+                               
+        //                         li.appendChild(delbtn);
+        //                         delbtn.addEventListener(`click` , function (){
+        //                             li.remove();
+        //                         })
+
+
+        
+
+        // function addToCart(){
+        //     ul.appendChild(li);
+        // }
+
+
+//         function addToCart(itemCard){
+//             const itemCard = cartIcon.closest('.item-card');
+//             let itemName = itemCard.querySelector("p").textContent;
+// let itemPRice = itemCard.querySelector("b").textContent;
+// let itemImg = itemCard.querySelector("img").getAttribute("src"); 
+//           let ul = document.getElementById("cartList");
+//         let li = document.createElement("li");
+
+//          li.innerHTML = `
+//         <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+//                                     <div class="offcanvas-cart-img w-25">
+//                                         <img src="${itemImg}" alt="" class="rounded w-100">
+//                                     </div>
+//                                     <div class="offcanvas-cart-img-content">
+//                                         <b>${itemName}</b>
+//                                         <p>${itemPRice} </p>
+//                                     </div>
+                                   
+//                                 </li>
+//                                 `
+//                                 ul.appendChild(li);
+//         }
+
+
+// function addToCart(cartIcon) {
+//     // Find the parent .item-card of the clicked icon
+//     const itemCard = cartIcon.closest('.item-card');
+
+//     // Extract data from this item only
+//     const itemName = itemCard.querySelector("p").textContent;
+//     const itemPRice = itemCard.querySelector("b").textContent;
+//     const itemImg = itemCard.querySelector("img").getAttribute("src");
+
+//     // Create cart item
+//     const ul = document.getElementById("cartList");
+//     const li = document.createElement("li");
+
+//     li.innerHTML = `
+//         <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+//             <div class="offcanvas-cart-img w-25">
+//                 <img src="${itemImg}" alt="" class="rounded w-100">
+//             </div>
+//             <div class="offcanvas-cart-img-content">
+//                 <b>${itemName}</b>
+//                 <p>${itemPRice}</p>
+//             </div>
+//         </li>
+//     `;
+
+//     ul.appendChild(li);
+// }
+
+
+function addToCart(cartIcon) {
+    const itemCard = cartIcon.closest('.item-card');
+    const itemName = itemCard.querySelector("p").textContent;
+    const itemPRice = itemCard.querySelector("b").textContent;
+    const itemImg = itemCard.querySelector("img").getAttribute("src");
+
+    const ul = document.getElementById("cartList");
+    const li = document.createElement("li");
+
+    li.innerHTML = `
+        <li class="d-flex gap-2 align-items-center border-bottom p-2 mt-2">
+            <div class="offcanvas-cart-img w-25">
+                <img src="${itemImg}" alt="" class="rounded w-100">
+            </div>
+            <div class="offcanvas-cart-img-content">
+                <b>${itemName}</b>
+                <p>${itemPRice}</p>
+            </div>
+        </li>
+    `;
+
+    ul.appendChild(li);
+}
+
+// This part is for event listeners (Recommended)
+document.querySelectorAll('.shopping-cart').forEach(cartIcon => {
+    cartIcon.addEventListener('click', function() {
+        addToCart(cartIcon);
+    });
+});
+
+
+
+
     </script>
 </body>
 
